@@ -41,16 +41,16 @@ public class IssueServiceImpl implements IssueService {
             throw new ApplicationException(LibraryConstants.USER_NOT_FOUND + "userName", HttpStatus.NOT_FOUND);
         }
         book.get().setQuantity(book.get().getQuantity() - 1);
-        bookRepository.save(book.get());
+        Books updatedBook = bookRepository.save(book.get());
 
         final Issue checkout = new Issue();
         checkout.setIsbn(isbn);
         checkout.setUserName(userName);
         checkout.setIssueDate(new Date());
         checkout.setReturnDate(new Date(System.currentTimeMillis() + LibraryConstants.returnTimeInMillis));
-        issueRepository.save(checkout);
 
-        return checkout;
+        return issueRepository.save(checkout);
+
     }
 
     @Override
