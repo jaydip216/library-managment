@@ -18,4 +18,4 @@
 * Clone this repo and import it in your IDE
 * Run it as a springboot application
 * No need to change any database config as this service is using public AWS RDS
-* Service will start on port 8080 use API documentation given above to test the APIs
+* Service will start on port 8080. Use API documentation given above to test the APIs
