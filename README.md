@@ -4,7 +4,7 @@
 
 #### TechStack: Java, Spring boot, JPA, Spring Security, PostgreSQL(AWS RDS Server), TestNG
 
-##### Spring dependency used in these project:
+##### Spring dependency used in this project:
 * spring-boot-starter-security: Used to apply security to the application
 * spring-security-config: Provides role based security to the application
 * spring-boot-starter-web: Used to implement REST APIs
